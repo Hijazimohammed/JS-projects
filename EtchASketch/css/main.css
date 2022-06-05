@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+.main-container {
+  display: grid;
+  border: 1px solid #ddd;
+  grid-gap: 2px;
+}
+.inner-div {
+  border: 1px solid #333;
+  text-align: center;
+  padding: 10px;
+}
+
+.button {
+  padding: 10px;
+}

@@ -1,0 +1,119 @@
+#btn {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 101, 208, 0.9752275910364145) 0%,
+    rgba(124, 160, 235, 1) 42%,
+    rgba(10, 93, 159, 0.2637429971988795) 100%
+  );
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-gap: 5px;
+}
+
+.book {
+  border: 1px solid #ddd;
+  display: flex;
+  padding-left: 1rem;
+}
+.book-details {
+  margin-left: 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(54, 91, 253);
+}
+p {
+  color: rgb(88, 88, 88);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.div-img {
+  width: 150px;
+  height: 100%;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.modal {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  -moz-transition: visibility 0s, opacity 0.5s;
+  -ms-transition: visibility 0s, opacity 0.5s;
+  -o-transition: visibility 0s, opacity 0.5s;
+  background-color: #ddd;
+}
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 50%;
+  height: 30px;
+}
+input {
+  outline: none;
+  border: 1px solid #eee;
+  padding-left: 0.5rem;
+  margin-left: 0.3rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 70%;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+.btn-submit {
+  width: 50%;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

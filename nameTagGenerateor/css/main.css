@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+input {
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #999;
+  font-size: 1.3rem;
+}
+
+button {
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #999;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.tags {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tag {
+  text-align: center;
+  background-color: #f40e2a;
+  padding: 10px 0 20px;
+  border-radius: 20px;
+  width: 350px;
+  margin: 20px 10px;
+
+  position: relative;
+}
+.tag-title {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+}
+.tag-subtitle {
+  color: white;
+  margin: 0;
+}
+.tag-name {
+  background-color: white;
+  margin: 10px 0;
+  font-size: 60px;
+  height: 90px;
+  font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+}
+.tag-delete {
+  position: absolute;
+  padding: 5px 8px;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.tag-delete:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+#clear-all {
+  margin-top: 1rem;
+}

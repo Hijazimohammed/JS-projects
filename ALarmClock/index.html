@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="display-time"></div>
+      <div class="new-alarm">
+        <form>
+          <div>
+            <label for="hour">Hour : </label>
+            <input type="number" name="hour" id="hour" min="1" max="12" />
+          </div>
+          <div>
+            <label for="minute"> Minute : </label>
+            <input type="number" name="minute" id="minute" min="0" max="60" />
+          </div>
+          <div>
+            <label for="ampm">Period :</label>
+            <select name="ampm" id="ampm">
+              <option value="am">am</option>
+              <option value="pm">pm</option>
+            </select>
+          </div>
+          <div><button id="add-alarm" type="submit">add alarm</button></div>
+        </form>
+      </div>
+      <div class="alarms"></div>
+      <div class="audio">
+        <!-- <audio
+          src="http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapill.ogg"
+          controls
+          id="audio"
+        ></audio> -->
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
